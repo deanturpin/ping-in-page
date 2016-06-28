@@ -18,10 +18,8 @@ $(document).ajaxComplete(function(event, request, settings) {
 			var match = /^[0-9\.]{7,}/.exec($(this).text());
 
 			// Set the colour accordingly and clear text decoration
-			if (ip == match[0]) {
+			if (ip == match[0])
 				$(this).css('color', colour);
-				// $(this).css('text-decoration', 'none');
-			}
 		});
 	}
 });
@@ -40,9 +38,6 @@ function ping() {
 				url: 'http://localhost/cgi-bin/ping?' + ip,
 				cache: 'false'
 				});
-
-			// Set underline to indicate ping pending
-			// $(this).css('text-decoration', 'underline');
 		}
 	});
 }
