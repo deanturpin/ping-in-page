@@ -42,6 +42,7 @@ function ping() {
 	});
 }
 
+// Simply including this file will start the pinging
 $(document).ready(function(){
 
 	// When the document is complete, let's ping!
